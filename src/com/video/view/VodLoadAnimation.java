@@ -1,7 +1,5 @@
 package com.video.view;
 
-
-
 import com.video.mplayer.R;
 
 import android.annotation.SuppressLint;
@@ -16,8 +14,6 @@ import android.widget.TextView;
 
 @SuppressLint("NewApi")
 public class VodLoadAnimation extends LinearLayout {
-
-	
 
 	private TextView mTextPrompt;
 
@@ -35,19 +31,20 @@ public class VodLoadAnimation extends LinearLayout {
 	}
 
 	private void init(Context context) {
+
 		View view = LayoutInflater.from(context).inflate(
 				R.layout.vod_load_anim, this);
-		ImageView progressImageView = (ImageView) view.findViewById(R.id.vod_load_img);
+		ImageView progressImageView = (ImageView) view
+				.findViewById(R.id.vod_load_img);
 		mTextPrompt = (TextView) view.findViewById(R.id.load_prompt);
 		AnimationDrawable ad = (AnimationDrawable) progressImageView
 				.getDrawable();
 		ad.start();
 	}
 
-	public void setPromptText(int traffic) {
-//		String promptText = getString(R.string.load_prompt) + "(" + traffic
-//				+ getString(R.string.kbs) + ")";
-//		mTextPrompt.setText(promptText);
+	public void setPromptText(String traffic) {
+		String promptText = "(" + traffic + "/KB)";
+		 mTextPrompt.setText(promptText);
 	}
 
 	private String getString(int resId) {

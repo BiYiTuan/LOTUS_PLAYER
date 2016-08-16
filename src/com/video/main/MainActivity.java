@@ -25,6 +25,12 @@ public class MainActivity extends Activity {
 	    initwidget();
 		// new Download(mProgressbar);
 	}
+	@Override
+	public void onBackPressed() {
+		// TODO Auto-generated method stub
+		android.os.Process.killProcess(android.os.Process.myPid());
+		super.onBackPressed();
+	}
 	private void initwidget() {
 		// TODO Auto-generated method stub
 		mplay=(PlayVideoView) findViewById(R.id.playView);
@@ -36,7 +42,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				mplay.playVideo("http://www.timetvbox.com/uso/0001.mp4");
+				mplay.playVideo("forcetv://sportnewlive.itvpad.co:9926/5707713200057ecc00c1a07b757f2c48");
 			}
 			
 		});
@@ -45,7 +51,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				mplay.playVideo("http://69.46.75.107/files/videos/140747456300c03.flv");
+				mplay.playVideo("force://upload.btvgod.com:9906/57ad78be000cd4450012a0e5459b33a3");
 			}
 			
 		});

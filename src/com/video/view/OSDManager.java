@@ -22,6 +22,7 @@ public class OSDManager {
 	public static final String OSD_PAUSE = "com.moon.osd.pause";
 	public static final String OSD_VOLUME = "com.moon.osd.volume";
 	public static final String OSD_LOADING = "com.moon.osd.loading";
+	public static final String OSD_BEFORLOAD = "com.moon.osd.befoload";
 	public static final String OSD_CACHE = "com.moon.osd.caching";
 	private static Map<String,OSD> OSDList = new HashMap<String,OSD>();
 	

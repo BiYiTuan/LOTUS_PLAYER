@@ -9,8 +9,5 @@
     <item android:duration="125" android:drawable="@drawable/p_loading_06" />
     <item android:duration="125" android:drawable="@drawable/p_loading_07" />
     <item android:duration="125" android:drawable="@drawable/p_loading_08" />
-    <item android:duration="125" android:drawable="@drawable/p_loading_09" />
-    <item android:duration="125" android:drawable="@drawable/p_loading_10" />
-    <item android:duration="125" android:drawable="@drawable/p_loading_11" />
-    <item android:duration="125" android:drawable="@drawable/p_loading_12" />
+
 </animation-list>
